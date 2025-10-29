@@ -1,0 +1,60 @@
+.navigationContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #637083;
+	padding: 18px 120px;
+}
+
+.logoSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 6px;
+	width: 115px;
+	height: 34px;
+
+	.logo {
+		height: 34px;
+		width: 34px;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: 600;
+	}
+}
+
+.actionSection {
+	display: flex;
+	flex-direction: row;
+	gap: 35px;
+}
+
+.btnContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 14px;
+
+	p {
+		color: var(--text-secondary);
+		font-size: 15px;
+		font-weight: 400;
+	}
+
+}
+
+.createAccBtn {
+	background-color: var(--color-primary);
+	border-radius: 50px;
+	text-align: center;
+	height: 42px;
+	width: 160px;
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--text-inverse);
+}

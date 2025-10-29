@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+/* 
+Thin	100	Very light headings
+Extra Light	200	Rarely used
+Light	300	Secondary text
+Regular / Normal	400	Default text weight
+Medium	500	Slightly heavier paragraphs / subheadings
+Semi Bold	600	Buttons, titles, emphasis
+Bold	700	Section headings
+Extra Bold	800	Rarely used, hero titles
+Black	900	Display fonts, rarely in UI */
+
+/* Import font */
+@font-face {
+	font-family: 'Outfit';
+	src: url('./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-display: swap;
+}
+
+/* Root defaults */
+:root {
+	color-scheme: light dark;
+	/* backgrounds */
+	--background: #FFFFFF;
+	--foreground: #0a0a0a;
+
+	/* BRAND */
+	--color-primary: #2563EB;
+
+	/* Text colors */
+	--text-primary: #0E0E0E;
+	--text-secondary: #565656;
+	--text-inverse: #ffffff;
+}
+
+/* Reset */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+#root {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: var(--background);
+	color: var(--foreground);
+	font-family: 'Outfit', system-ui, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Optional global container alignment */
+#root {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
