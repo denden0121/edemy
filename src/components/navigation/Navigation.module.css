@@ -1,10 +1,19 @@
+.navigationWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #637083;
+}
+
 .navigationContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #637083;
-	padding: 18px 120px;
+	padding: 18px 0;
+	width: 80%;
 }
 
 .logoSection {
@@ -44,6 +53,7 @@
 		color: var(--text-secondary);
 		font-size: 15px;
 		font-weight: 400;
+		width: max-content;
 	}
 
 }

@@ -1,12 +1,10 @@
-import styles from "./Banner.module.css";
-import Navigation from "../../components/navigation/Navigation";
+import styles from "./Hero.module.css";
 import SearchIcon from "../../assets/icons/search-icon.svg";
 
 const Banner = () => {
 	return (
-		<div>
-			<Navigation />
-			<div className={styles.bannerContainer}>
+		<div className={styles.heroWrapper}>
+			<div className={styles.heroContainer}>
 				<p className={styles.tagline}>
 					Empower your future with the courses designed to{" "}
 					<span>fit your choice.</span>
