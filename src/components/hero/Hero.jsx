@@ -1,15 +1,15 @@
 import styles from "./Hero.module.css";
-import SearchIcon from "../../assets/icons/search-icon.svg";
+import SearchIcon from "@/assets/icons/search-icon.svg";
 
 const Banner = () => {
 	return (
 		<div className={styles.heroWrapper}>
 			<div className={styles.heroContainer}>
-				<p className={styles.tagline}>
-					Empower your future with the courses designed to{" "}
-					<span>fit your choice.</span>
+				<p className={styles.title}>
+					Empower your future with the courses designed to
+					<span> fit your choice.</span>
 				</p>
-				<p className={styles.information}>
+				<p className={styles.subtitle}>
 					We bring together world-class instructions, interactive content, and a
 					supportive community to help you achive your personal and professional
 					goals.

@@ -1,15 +1,14 @@
 import styles from "./CourseCard.module.css";
-import AIbgRemoval from "@/assets/images/courses/AI-bg-removal-saas-app.png";
 import StarColored from "@/assets/images/star-colored.svg";
 import Star from "@/assets/images/star.svg";
 
-const CourseCard = () => {
+const CourseCard = ({ img, title, instructor, cost }) => {
 	return (
 		<div className={styles.card}>
-			<img src={AIbgRemoval} alt="" />
+			<img src={img} alt="" />
 			<div className={styles.description}>
-				<p className={styles.title}>Build Text to image Saas App in React JS</p>
-				<p className={styles.instructor}>Richard James</p>
+				<p className={styles.title}>{title}</p>
+				<p className={styles.instructor}>{instructor}</p>
 				<p className={styles.rate}>
 					4.5
 					<span>
@@ -21,7 +20,7 @@ const CourseCard = () => {
 					</span>
 					<span className={styles.rateCount}>(122)</span>
 				</p>
-				<p className={styles.cost}>$10.99</p>
+				<p className={styles.cost}>${cost}</p>
 			</div>
 		</div>
 	);

@@ -3,8 +3,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 24px;
+	gap: 48px;
 	padding: 12px 0;
+	height: 100dvh;
 }
 
 .title {
@@ -30,6 +31,7 @@
 	gap: 14px;
 }
 
+
 button {
 	height: 45px;
 	width: 175px;
@@ -37,4 +39,10 @@ button {
 	border: 1px solid rgb(107, 114, 128, .5);
 	color: #8A8C8F;
 	text-align: center;
+}
+
+button:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+	transition: all .2s ease-out;
 }

@@ -1,7 +1,38 @@
 import styles from "./Courses.module.css";
 import CourseCard from "@/components/course_card/CourseCard";
+import TextToImage from "@/assets/images/courses/text-to-image.png";
+import AIbgRemoval from "@/assets/images/courses/AI-bg-removal-saas-app.png";
+import ReactRouter from "@/assets/images/courses/react-router.png";
+import BuildFullEcommerce from "@/assets/images/courses/build-full-stack-e-commerce.png";
 
 const Courses = () => {
+	const courseData = [
+		{
+			title: "Build Text to image SaaS App in React JS",
+			instructor: "Richard James",
+			cost: 10.99,
+			img: TextToImage,
+		},
+		{
+			title: "Build AI BG Removal SaaS App in React JS",
+			instructor: "Richard James",
+			cost: 10.99,
+			img: AIbgRemoval,
+		},
+		{
+			title: "React Router Complete Course in One Video",
+			instructor: "Richard James",
+			cost: 10.99,
+			img: ReactRouter,
+		},
+		{
+			title: "Build Full Stack E-Commerce App in React JS",
+			instructor: "Richard James",
+			cost: 10.99,
+			img: BuildFullEcommerce,
+		},
+	];
+
 	return (
 		<div className={styles.container}>
 			<p className={styles.title}>Learn from the best</p>
@@ -11,10 +42,15 @@ const Courses = () => {
 				deliver results.
 			</p>
 			<div className={styles.courseContainer}>
-				<CourseCard />
-				<CourseCard />
-				<CourseCard />
-				<CourseCard />
+				{courseData.map((data, index) => (
+					<CourseCard
+						key={index}
+						img={data.img}
+						title={data.title}
+						instructor={data.instructor}
+						cost={data.cost}
+					/>
+				))}
 			</div>
 			<button>Show all courses</button>
 		</div>

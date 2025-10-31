@@ -4,6 +4,12 @@
 	border: 1px solid #E1E1E1;
 	border-radius: 8px;
 	padding: 0 0 24px 0;
+	cursor: pointer;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	transition: all .2s ease-in-out;
 }
 
 .description {

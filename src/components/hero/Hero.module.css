@@ -18,15 +18,33 @@
 	flex: 1;
 }
 
-.tagline {
+.title {
 	color: var(--text-primary);
 	font-size: 46px;
 	font-weight: 700;
 	width: 50%;
 	text-align: center;
+
+	span {
+		color: var(--color-primary);
+		position: relative;
+	}
+
+	span::after {
+		content: "";
+		position: absolute;
+		top: 50px;
+		right: 0;
+		width: 214px;
+		height: 30px;
+		background-image: url('../../assets/images/sktech.svg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
 }
 
-.information {
+.subtitle {
 	color: var(--text-secondary);
 	font-size: 16px;
 	font-weight: 400;
@@ -69,6 +87,7 @@ label {
 	border-radius: 5px;
 	font-size: 15px;
 	font-weight: 400;
+	border: none;
 }
 
 .searchInput {

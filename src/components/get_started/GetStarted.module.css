@@ -1,0 +1,67 @@
+.getStarted {
+	width: 100%;
+	height: 40dvh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+}
+
+.header {
+	font-size: 38px;
+	font-weight: 600;
+	color: #1F2937;
+	line-height: 44px;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 16px;
+	font-weight: 400;
+	color: rgb(31, 41, 55, .9);
+	line-height: 22px;
+	text-align: center;
+	width: 65%;
+}
+
+.headerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.btnContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 43px;
+}
+
+.getStartedBtn {
+	background-color: rgb(2, 96, 255, .9);
+	color: var(--text-inverse);
+	border: none;
+}
+
+.learnMoreBtn {
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	color: #1F2937;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+
+
+}
+
+.arrow {
+	height: 14px;
+	max-width: 13px;
+}
