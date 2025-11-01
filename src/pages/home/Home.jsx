@@ -9,7 +9,7 @@ import Footer from "@/components/footer/Footer";
 
 const Home = () => {
 	return (
-		<div className={styles.homeWrapper}>
+		<div className={styles.home}>
 			{/* navigation */}
 			<Navigation />
 			{/* hero */}
