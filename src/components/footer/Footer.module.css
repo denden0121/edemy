@@ -1,3 +1,143 @@
 .footer {
 	background-color: #111820;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 30dvh;
+}
+
+.container {
+	border-bottom: 1px solid rgb(255, 255, 255, .3);
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	padding: 14px;
+}
+
+.logoSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 6px;
+	width: 115px;
+	height: 34px;
+
+	.logo {
+		height: 34px;
+		width: 34px;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: 600;
+		color: var(--text-inverse);
+	}
+}
+
+.about {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 30px;
+	color: rgb(255, 255, 255, .8);
+	width: 65%;
+}
+
+.company {
+	.header {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 30px;
+		color: var(--text-inverse);
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li a {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		color: rgb(255, 255, 255, .8);
+	}
+}
+
+.subscribe {
+	.header {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 30px;
+		color: var(--text-inverse);
+	}
+
+	.subtitle {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		color: rgb(255, 255, 255, .8);
+		width: 65%;
+	}
+
+	label {
+		width: 260px;
+	}
+
+	input {
+		height: 100%;
+		width: 100%;
+		padding: 12px 4px 12px 8px;
+		background-color: transparent;
+		color: var(--text-inverse);
+		font-size: 14px;
+		background-color: #1F2937;
+		border: 1px solid rgb(107, 114, 128, .3);
+		border-radius: 4px;
+	}
+
+	input:focus {
+		border: none;
+		outline: none;
+	}
+
+	input::placeholder {
+		color: #6B7280;
+	}
+
+	form {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		gap: 20px;
+
+		button {
+			width: 97px;
+			border: none;
+			background-color: var(--color-primary);
+			font-size: 14px;
+			font-weight: 500;
+			color: var(--text-inverse);
+		}
+	}
+}
+
+.copyright {
+	font-size: 15px;
+	font-weight: 400;
+	color: rgb(255, 255, 255, .6);
+	text-align: center;
+	padding: 14px 0;
+}
+
+.decription,
+.company,
+.subscribe {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	gap: 30px;
 }
