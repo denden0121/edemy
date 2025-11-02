@@ -4,7 +4,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 1px solid #637083;
+	border-bottom: 1px solid rgb(37, 37, 37, .3);
+	padding: 0 38px;
 }
 
 .navigationContainer {
@@ -13,7 +14,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 18px 0;
-	width: 80%;
+	width: 100%;
 }
 
 .logoSection {
@@ -41,7 +42,12 @@
 .actionSection {
 	display: flex;
 	flex-direction: row;
-	gap: 35px;
+	gap: 12px;
+
+	img {
+		height: 45px;
+		width: 45px;
+	}
 }
 
 .btnContainer {
@@ -65,16 +71,4 @@
 	width: max-content;
 	cursor: pointer;
 	padding: 0 14px;
-}
-
-.createAccBtn {
-	background-color: var(--color-primary);
-	border-radius: 50px;
-	text-align: center;
-	height: 42px;
-	width: 160px;
-	font-size: 15px;
-	font-weight: 400;
-	color: var(--text-inverse);
-	border: none;
 }

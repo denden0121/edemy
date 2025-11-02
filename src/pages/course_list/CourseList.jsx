@@ -1,5 +1,6 @@
 import styles from "./CourseList.module.css";
 import Navigation from "@/components/navigation/Navigation";
+import Footer from "@/components/footer/Footer";
 import CourseCard from "@/components/course_card/CourseCard";
 import TextToImage from "@/assets/images/courses/text-to-image.png";
 import AIbgRemoval from "@/assets/images/courses/AI-bg-removal-saas-app.png";
@@ -85,6 +86,7 @@ const CourseList = () => {
 
 	return (
 		<div className={styles.courseList}>
+			{/* navigation */}
 			<Navigation />
 			<div className={styles.headerContainer}>
 				<div className={styles.header}>
@@ -117,6 +119,8 @@ const CourseList = () => {
 					/>
 				))}
 			</div>
+			{/* footer */}
+			<Footer />
 		</div>
 	);
 };

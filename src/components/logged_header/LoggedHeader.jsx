@@ -1,6 +1,7 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
-import styles from "./Navigation.module.css";
+import styles from "./LoggedHeader.module.css";
 import EdemyLogo from "@/assets/images/edemy-logo.svg";
+import ProfileIcon from "@/assets/icons/profile-icon.svg";
 
 const Navigation = () => {
 	const navigate = useNavigate();
@@ -14,12 +15,9 @@ const Navigation = () => {
 				</div>
 				<div className={styles.actionSection}>
 					<div className={styles.btnContainer}>
-						<p>Add Course</p>
-						<p className={styles.login} onClick={() => navigate("/dashboard")}>
-							Login
-						</p>
+						<p>Hi! Denden</p>
 					</div>
-					<button className={styles.createAccBtn}>Create Account</button>
+					<img src={ProfileIcon} alt="" />
 				</div>
 			</div>
 		</div>
