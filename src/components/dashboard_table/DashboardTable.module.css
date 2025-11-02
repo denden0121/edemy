@@ -1,0 +1,44 @@
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 6px;
+	border: 1px solid rgb(37, 37, 37, .2);
+}
+
+th,
+td {
+	text-align: start;
+	padding: 8px 4px;
+	border-bottom: 1px solid rgb(37, 37, 37, .2);
+
+}
+
+th {
+	font-size: 14px;
+	font-weight: 600;
+	color: #252525;
+}
+
+td {
+	p {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		max-width: max-content;
+		gap: 9px;
+
+		img {
+			height: 35px;
+			width: 35px;
+		}
+
+		span {
+			font-size: 14px;
+			font-weight: 400;
+			color: rgb(37, 37, 37, .7);
+		}
+	}
+
+
+}

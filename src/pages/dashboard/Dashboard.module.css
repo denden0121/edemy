@@ -25,13 +25,11 @@ main {
 
 .dashboardTable {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: start;
 	align-items: start;
 	gap: 24px;
 	width: 90%;
-	height: 20dvh;
-	border: 1px solid rgba(0, 0, 0, 0.247);
 }
 
 .dashboardTable p:nth-child(1) {
