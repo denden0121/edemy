@@ -7,21 +7,18 @@ import StarColoredIcon from "@/assets/icons/star-colored.svg";
 
 const CourseDetailsCard = () => {
 	return (
-		<div className="shadow-md">
-			<div>
-				<img src={TextToImage} alt="Text to image" />
-			</div>
-			<div className="flex flex-col justify-start items-start p-4">
-				<p className="flex flex-row justify-start items-center gap-2 text-[#FF4B4B]">
-					<img className="m-h-4 max-w-4" src={TimeLeftIcon} alt="" />5 days left
-					at this price!
+		<div className="shadow-lg flex flex-col justify-start items-start">
+			<img className={styles.courseImg} src={TextToImage} alt="Text to image" />
+			<div className={styles.courseDescription}>
+				<p className={styles.timeLeft}>
+					<img src={TimeLeftIcon} alt="" />5 days left at this price!
 				</p>
-				<div className="flex flex-row justify-center items-center gap-2">
-					<p className="text-[34px] font-semibold w-max">$10.99</p>
-					<p className="text-lg font-normal w-max">$19.99</p>
-					<p className="text-lg font-normal w-max">50%off</p>
+				<div className={styles.priceContainer}>
+					<p>$10.99</p>
+					<p>$19.99</p>
+					<p>50% off</p>
 				</div>
-				<div className="flex flex-row justify-center items-center gap-2">
+				<div className={styles.summaryContainer}>
 					<p>
 						<img src={StarColoredIcon} alt="" />
 						4.5
@@ -35,9 +32,9 @@ const CourseDetailsCard = () => {
 						54 lessons
 					</p>
 				</div>
-				<button>Enroll Now</button>
-				<p className="text-lg font-medium">What's in the course?</p>
-				<ul className="*:text-sm *:font-normal *:text-[#656565] flex flex-col gap-2 list-disc">
+				<button className={styles.enrollNowBtn}>Enroll Now</button>
+				<p className={styles.question}>What's in the course?</p>
+				<ul>
 					<li>Lifetime access with free updates</li>
 					<li>Step-by-step, hands-on project guidance</li>
 					<li>Downloadable resources and source code.</li>
@@ -51,3 +48,13 @@ const CourseDetailsCard = () => {
 };
 
 export default CourseDetailsCard;
+
+// 1. Force a Standard Aspect Ratio at Upload (Recommended)
+
+// When users upload a course image, force them to crop or scale to your standard ratio, e.g. 16:9 or 4:3.
+
+// Use a frontend cropper (e.g. react-easy-crop
+//  or Cropper.js
+// ) so users see exactly how their image will appear.
+
+// Store the cropped version on your server.

@@ -1,10 +1,13 @@
 import styles from "./CourseCard.module.css";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import StarColored from "@/assets/images/star-colored.svg";
 import Star from "@/assets/images/star.svg";
 
 const CourseCard = ({ img, title, instructor, cost }) => {
+	const navigate = useNavigate();
+
 	return (
-		<div className={styles.card}>
+		<div className={styles.card} onClick={() => navigate("/course-details")}>
 			<img src={img} alt="" />
 			<div className={styles.description}>
 				<p className={styles.title}>{title}</p>

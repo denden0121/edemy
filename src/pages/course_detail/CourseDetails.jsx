@@ -1,14 +1,17 @@
 import styles from "./CourseDetail.module.css";
 import Navigation from "@/components/navigation/Navigation";
-import CourseDetailsCard from "../../components/course_details_card/CourseDetailsCard";
+import CourseDetailsCard from "@/components/course_details_card/CourseDetailsCard";
+import CourseDetailsDescription from "@/components/course_details_description/CourseDetailsDescription";
 
 const CourseDetails = () => {
 	return (
 		<div className={styles.courseDetails}>
 			<Navigation />
-			<div className="flex lg:flex-row md:flex-col w-[80%] h-full">
-				<div className={styles.div1}>1</div>
-				<div className={styles.div2}>
+			<div className="flex flex-row w-[80%] h-full">
+				<div className={styles.detailsContainer}>
+					<CourseDetailsDescription />
+				</div>
+				<div className={styles.cardContainer}>
 					<CourseDetailsCard />
 				</div>
 			</div>
