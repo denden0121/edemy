@@ -1,4 +1,5 @@
 import styles from "./Courses.module.css";
+import { Routes, Route, useNavigate, Link } from "react-router-dom";
 import CourseCard from "@/components/course_card/CourseCard";
 import TextToImage from "@/assets/images/courses/text-to-image.png";
 import AIbgRemoval from "@/assets/images/courses/AI-bg-removal-saas-app.png";
@@ -6,6 +7,8 @@ import ReactRouter from "@/assets/images/courses/react-router.png";
 import BuildFullEcommerce from "@/assets/images/courses/build-full-stack-e-commerce.png";
 
 const Courses = () => {
+	const navigate = useNavigate();
+
 	const courseData = [
 		{
 			title: "Build Text to image SaaS App in React JS",
@@ -52,7 +55,7 @@ const Courses = () => {
 					/>
 				))}
 			</div>
-			<button>Show all courses</button>
+			<button onClick={() => navigate("/course-list")}>Show all courses</button>
 		</div>
 	);
 };

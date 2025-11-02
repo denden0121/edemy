@@ -1,5 +1,5 @@
-import styles from "./CourseCard.module.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import styles from "./CourseCard.module.css";
 import StarColored from "@/assets/images/star-colored.svg";
 import Star from "@/assets/images/star.svg";
 
