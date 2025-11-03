@@ -1,5 +1,6 @@
 import styles from "./DashboardCoursesTable.module.css";
 import TextToImage from "@/assets/images/courses/text-to-image.svg";
+import Switch from "@/components/ui/Switch";
 
 const DashboardTable = () => {
 	return (
@@ -20,10 +21,7 @@ const DashboardTable = () => {
 				<td>$150</td>
 				<td>25</td>
 				<td>
-					<label className={styles.switch}>
-						<input type="checkbox" />
-						<span className={styles.slider}></span>
-					</label>
+					<Switch />
 				</td>
 			</tr>
 			<tr>
@@ -36,10 +34,7 @@ const DashboardTable = () => {
 				<td>$150</td>
 				<td>25</td>
 				<td>
-					<label className={styles.switch}>
-						<input type="checkbox" />
-						<span className={styles.slider}></span>
-					</label>
+					<Switch />
 				</td>
 			</tr>
 			<tr>
@@ -52,10 +47,7 @@ const DashboardTable = () => {
 				<td>$150</td>
 				<td>25</td>
 				<td>
-					<label className={styles.switch}>
-						<input type="checkbox" />
-						<span className={styles.slider}></span>
-					</label>
+					<Switch />
 				</td>
 			</tr>
 			<tr>
@@ -68,10 +60,7 @@ const DashboardTable = () => {
 				<td>$150</td>
 				<td>25</td>
 				<td>
-					<label className={styles.switch}>
-						<input type="checkbox" />
-						<span className={styles.slider}></span>
-					</label>
+					<Switch />
 				</td>
 			</tr>
 			<tr>
@@ -84,10 +73,7 @@ const DashboardTable = () => {
 				<td>$150</td>
 				<td>25</td>
 				<td>
-					<label className={styles.switch}>
-						<input type="checkbox" />
-						<span className={styles.slider}></span>
-					</label>
+					<Switch />
 				</td>
 			</tr>
 			<tr>
@@ -100,10 +86,7 @@ const DashboardTable = () => {
 				<td>$150</td>
 				<td>25</td>
 				<td>
-					<label className={styles.switch}>
-						<input type="checkbox" />
-						<span className={styles.slider}></span>
-					</label>
+					<Switch />
 				</td>
 			</tr>
 		</table>

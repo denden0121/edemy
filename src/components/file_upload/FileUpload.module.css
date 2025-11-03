@@ -1,0 +1,37 @@
+.fileUploadContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 19px;
+
+	input {
+		display: none;
+	}
+
+	img {
+		min-height: 36px;
+		min-width: 36px;
+	}
+
+	label {
+		font-size: 16px;
+		font-weight: 400;
+		width: max-content;
+		text-align: start;
+		min-width: max-content;
+	}
+}
+
+.fileBtn {
+	height: max-content;
+	width: max-content;
+	cursor: pointer;
+}
+
+.fileUploadContainer p:nth-child(4) {
+	img {
+		height: 36px;
+		width: 64px;
+	}
+}
