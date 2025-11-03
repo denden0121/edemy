@@ -11,6 +11,7 @@ const Dashboard = () => {
 				<Navigation />
 				<main>
 					<div className={styles.dashboardTable}>
+						<p>Students Enrolled</p>
 						<DashboardTable />
 					</div>
 				</main>

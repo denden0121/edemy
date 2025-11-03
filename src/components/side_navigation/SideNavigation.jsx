@@ -18,7 +18,7 @@ const SideNavigation = () => {
 					<img src={AddIcon} alt="Add" />
 					Add Course
 				</li>
-				<li>
+				<li onClick={() => navigate("/my-courses")}>
 					<img src={CourseIcon} alt="Course" />
 					My Courses
 				</li>
