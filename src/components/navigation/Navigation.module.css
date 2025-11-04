@@ -12,7 +12,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 18px 0;
+	padding: 8px 0;
 	width: 80%;
 }
 
@@ -77,4 +77,65 @@
 	font-weight: 400;
 	color: var(--text-inverse);
 	border: none;
+}
+
+@media (max-width: 640px) {
+	.createAccBtn {
+		display: none;
+	}
+
+	.navigationContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px 0;
+		width: 95%;
+	}
+
+	.logoSection {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 6px;
+		width: 115px;
+		height: 34px;
+		cursor: pointer;
+
+		.logo {
+			height: 24px;
+			width: 24px;
+		}
+
+		p {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+
+	.login {
+		display: none;
+	}
+
+	.btnContainer p {
+		color: var(--text-secondary);
+		font-size: 14px;
+		font-weight: 400;
+		width: max-content;
+		cursor: pointer;
+		padding: 0 14px;
+	}
+
+	.createAccBtn {
+		background-color: var(--color-primary);
+		border-radius: 50px;
+		text-align: center;
+		height: 42px;
+		width: 160px;
+		font-size: 15px;
+		font-weight: 400;
+		color: var(--text-inverse);
+		border: none;
+	}
 }

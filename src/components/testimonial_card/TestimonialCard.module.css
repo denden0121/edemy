@@ -85,3 +85,94 @@
 	position: absolute;
 	bottom: 12px;
 }
+
+@media (max-width: 640px) {
+	.card {
+		width: 320px;
+		height: 300px;
+		border: 1px solid #E1E1E1;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.informationContainer {
+		background-color: #F3F3F3;
+		height: 78px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		gap: 22px;
+		padding: 12px;
+	}
+
+	.profile {
+		height: 50px;
+		width: 50px;
+		border-radius: 50px;
+		overflow: hidden;
+	}
+
+	.description {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.name {
+		font-size: 18px;
+		font-weight: 500;
+		color: #4B445A;
+	}
+
+	.profession {
+		font-size: 12px;
+		font-weight: 500;
+		color: #62577B;
+	}
+
+	.detialsContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		padding: 12px;
+		gap: 12px;
+		flex: 1;
+		position: relative;
+	}
+
+	.rate {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		width: max-content;
+
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.testimonialText {
+		font-size: 14px;
+		font-weight: 400;
+		color: #6B7280;
+
+	}
+
+	.readMoreBtn {
+		font-size: 14px;
+		font-weight: 400;
+		color: #1C70FF;
+		text-decoration: underline;
+		position: absolute;
+		bottom: 12px;
+	}
+
+}

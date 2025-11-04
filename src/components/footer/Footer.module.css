@@ -4,7 +4,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 30dvh;
+	height: max-content;
 }
 
 .container {
@@ -110,17 +110,19 @@
 	form {
 		display: flex;
 		flex-direction: row;
-		justify-content: start;
+		justify-content: center;
 		align-items: center;
 		gap: 20px;
 
-		button {
+		.subscribeBtn {
 			width: 97px;
 			border: none;
 			background-color: var(--color-primary);
 			font-size: 14px;
 			font-weight: 500;
 			color: var(--text-inverse);
+			margin: 0;
+			padding: 8px;
 		}
 	}
 }
@@ -143,4 +145,113 @@
 	align-items: start;
 	gap: 30px;
 	font-family: 'Inter';
+}
+
+
+@media (max-width: 640px) {
+	.footer {
+		background-color: #111820;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: max-content;
+	}
+
+	.container {
+		border-bottom: 1px solid rgb(255, 255, 255, .3);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 55px;
+		padding: 24px 0;
+	}
+
+	.logoSection {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 6px;
+		width: 115px;
+		height: 34px;
+	}
+
+	.decription {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 25px;
+	}
+
+	.logo {
+		height: 34px;
+		width: 34px;
+	}
+
+	.edemy {
+		font-size: 24px;
+		font-weight: 600;
+		font-family: 'Outfit';
+		color: white;
+	}
+
+	.about {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		color: rgb(255, 255, 255, .8);
+		width: 90%;
+		text-align: center;
+	}
+
+	.footerUl {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 13px;
+	}
+
+	li a {
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		color: rgb(255, 255, 255, .8);
+	}
+
+	.subscribe {
+		display: none;
+
+	}
+
+
+	.company {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 7px;
+		height: max-content;
+	}
+
+	.header {
+		text-align: center;
+		color: white;
+	}
+
+	.copyright {
+		font-size: 13px;
+		font-weight: 400;
+		font-family: 'Inter';
+		color: rgb(255, 255, 255, .6);
+		text-align: center;
+		padding: 14px 0;
+	}
+
 }

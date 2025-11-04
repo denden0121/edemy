@@ -7,8 +7,10 @@ const GetStarted = () => {
 			<div className={styles.headerContainer}>
 				<p className={styles.header}>Learn anything, anytime, anywhere</p>
 				<p className={styles.subtitle}>
-					Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim
-					id veniam aliqua proident excepteur commodo do ea.
+					Empower your journey with flexible, high-quality courses designed to
+					fit your unique schedule, learning style, and personal goals. Discover
+					new skills, gain valuable knowledge, and take confident steps toward
+					achieving your dreams at your own pace.
 				</p>
 			</div>
 			<div className={styles.btnContainer}>

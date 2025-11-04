@@ -9,17 +9,17 @@ const Footer = () => {
 				<div className={styles.decription}>
 					<div className={styles.logoSection}>
 						<img src={EdemyLogo} alt="" className={styles.logo} />
-						<p>Edemy</p>
+						<p className={styles.edemy}>Edemy</p>
 					</div>
 					<p className={styles.about}>
-						Lorem Ipsumis simply dummy text of the printing and typesetting
-						industry. Lorem Ipsum has been the industry's standard dummy text.
+						Empower your journey with flexible courses designed to fit your
+						schedule and goals.
 					</p>
 				</div>
 				{/* company */}
 				<div className={styles.company}>
 					<p className={styles.header}>Company</p>
-					<ul>
+					<ul className={styles.footerUl}>
 						<li>
 							<a href="#">Home</a>
 						</li>
@@ -44,7 +44,7 @@ const Footer = () => {
 						<label htmlFor="email">
 							<input type="text" placeholder="Enter your email" />
 						</label>
-						<button>Subscribe</button>
+						<button className={styles.subscribeBtn}>Subscribe</button>
 					</form>
 				</div>
 			</div>

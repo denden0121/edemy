@@ -1,5 +1,6 @@
 .heroWrapper {
-	height: 60dvh;
+	/* height: max-content; */
+	min-height: 50vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -11,7 +12,7 @@
 .heroContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: end;
 	align-items: center;
 	gap: 24px;
 	width: 80%;
@@ -95,6 +96,7 @@ label {
 	font-size: 15px;
 	padding: 12px 0;
 	width: 100%;
+	border: none;
 }
 
 .searchInput:focus {
@@ -104,4 +106,100 @@ label {
 
 .searchInput::placeholder {
 	color: #8A8C8F;
+}
+
+@media (max-width: 640px) {
+
+	.heroContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		align-items: center;
+		gap: 24px;
+		width: 90%;
+		flex: 1;
+	}
+
+	.title {
+		color: var(--text-primary);
+		font-size: 28px;
+		font-weight: 700;
+		width: 100%;
+		text-align: center;
+
+		span {
+			color: var(--color-primary);
+			position: relative;
+		}
+
+		span::after {
+			content: "";
+			display: none;
+		}
+
+	}
+
+	.subtitle {
+		color: var(--text-secondary);
+		font-size: 13px;
+		font-weight: 400;
+		text-align: center;
+		width: 90%;
+	}
+
+	.searchContainer {
+		border: 1px solid #6b728033;
+		border-radius: 5px;
+		background-color: #ffffff;
+		width: 90%;
+		height: 54px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 8px;
+	}
+
+	label {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 11px;
+		width: 100%;
+
+		img {
+			max-height: 10px;
+			max-width: 10px;
+		}
+	}
+
+	.searchBtn {
+		background-color: var(--color-primary);
+		color: var(--text-inverse);
+		text-align: center;
+		height: 30px;
+		width: 84px;
+		border-radius: 5px;
+		font-size: 13px;
+		font-weight: 400;
+		border: none;
+	}
+
+	.searchInput {
+		font-size: 15px;
+		padding: 12px 0;
+		width: 100%;
+		border: none;
+	}
+
+	.searchInput:focus {
+		border: none;
+		outline: none;
+	}
+
+	.searchInput::placeholder {
+		font-size: 13px;
+		color: #8A8C8F;
+	}
 }
