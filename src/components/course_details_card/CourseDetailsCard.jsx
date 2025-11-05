@@ -7,7 +7,7 @@ import StarColoredIcon from "@/assets/icons/star-colored.svg";
 
 const CourseDetailsCard = () => {
 	return (
-		<div className="shadow-lg flex flex-col justify-start items-start">
+		<div className="shadow-lg flex flex-col justify-start items-start py-4">
 			<img className={styles.courseImg} src={TextToImage} alt="Text to image" />
 			<div className={styles.courseDescription}>
 				<p className={styles.timeLeft}>

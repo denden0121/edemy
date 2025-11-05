@@ -85,43 +85,44 @@ const CourseList = () => {
 	];
 
 	return (
-		<div className={styles.courseList}>
-			{/* navigation */}
+		<>
 			<Navigation />
-			<div className={styles.headerContainer}>
-				<div className={styles.header}>
-					<p>Course List</p>
-					<p>
-						<span>Home </span> / Course List
-					</p>
-				</div>
+			<div className={styles.courseList}>
+				{/* navigation */}
+				<div className={styles.headerContainer}>
+					<div className={styles.header}>
+						<p>Course List</p>
+						<p>
+							<span>Home </span> / Course List
+						</p>
+					</div>
 
-				<div className={styles.searchContainer}>
-					<label htmlFor="search">
-						<img src={SearchIcon} alt="Search" />
-						<input
-							className={styles.searchInput}
-							type="text"
-							placeholder="Search for courses"
+					<div className={styles.searchContainer}>
+						<label htmlFor="search">
+							<img src={SearchIcon} alt="Search" />
+							<input
+								className={styles.searchInput}
+								type="text"
+								placeholder="Search for courses"
+							/>
+						</label>
+						<button className={styles.searchBtn}>Search</button>
+					</div>
+				</div>
+				<div className={styles.container}>
+					{courseData.map((data, index) => (
+						<CourseCard
+							key={index}
+							img={data.img}
+							title={data.title}
+							instructor={data.instructor}
+							cost={data.cost}
 						/>
-					</label>
-					<button className={styles.searchBtn}>Search</button>
+					))}
 				</div>
 			</div>
-			<div className={styles.container}>
-				{courseData.map((data, index) => (
-					<CourseCard
-						key={index}
-						img={data.img}
-						title={data.title}
-						instructor={data.instructor}
-						cost={data.cost}
-					/>
-				))}
-			</div>
-			{/* footer */}
 			<Footer />
-		</div>
+		</>
 	);
 };
 

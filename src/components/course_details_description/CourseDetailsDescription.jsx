@@ -5,7 +5,7 @@ import CourseDetailsStructure from "@/components/course_details_structure/Course
 
 const CourseDetailsDescription = () => {
 	return (
-		<div className="flex flex-col gap-12">
+		<div className={styles.courseDetailsDescription}>
 			<div className={styles.headerContainer}>
 				<p className={styles.header}>
 					Build Text to Image SaaS App in React JS
@@ -41,14 +41,20 @@ const CourseDetailsDescription = () => {
 				<p>22 sections - 54 lectures - 27h 25m total duration</p>
 				<CourseDetailsStructure />
 				<div className={styles.descriptionContainer}>
-					<p className={styles.description}>Course Description</p>
-					<p>
-						This is the most comprehensive and in-depth JavaScript course with
-						30 JavaScript projects. JavaScript is currently the most popular
-						programming language in the world. If you are an aspiring web
-						developer or full stack developer, JavaScript is a must to learn. It
-						also helps you to get high-paying jobs all over the world.
-					</p>
+					<p>Course Description</p>
+					<div className={styles.description}>
+						<p>
+							This is the most comprehensive and in-depth JavaScript course with
+							30 JavaScript projects.
+						</p>
+						<p>
+							This is the most comprehensive and in-depth JavaScript course with
+							30 JavaScript projects. JavaScript is currently the most popular
+							programming language in the world. If you are an aspiring web
+							developer or full stack developer, JavaScript is a must to learn.
+							It also helps you to get high-paying jobs all over the world.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
