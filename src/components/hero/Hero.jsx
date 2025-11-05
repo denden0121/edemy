@@ -7,7 +7,8 @@ const Banner = () => {
 			<div className={styles.heroContainer}>
 				<p className={styles.title}>
 					Empower your future with the courses designed to
-					<span> fit your choice.</span>
+					<span> fit </span>
+					<span className={styles.span}> your choice.</span>
 				</p>
 				<p className={styles.subtitle}>
 					We bring together world-class instructions, interactive content, and a
