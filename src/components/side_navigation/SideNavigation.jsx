@@ -1,32 +1,51 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import styles from "./SideNavigation.module.css";
-import HomeIcon from "@/assets/icons/home-icon.svg";
-import AddIcon from "@/assets/icons/add-icon.svg";
-import CourseIcon from "@/assets/icons/course.svg";
-import PersonIcon from "@/assets/icons/person.svg";
+import {
+	House,
+	SquarePlus,
+	Album,
+	UserCheck,
+	CircleChevronRight,
+} from "lucide-react";
 
 const SideNavigation = () => {
 	const navigate = useNavigate();
+	const [isOpen, setIsOpen] = useState(true);
+
 	return (
-		<nav className={styles.nav}>
-			<ul>
-				<li onClick={() => navigate("/dashboard")}>
-					<img src={HomeIcon} alt="Home" />
-					Dashboard
+		<nav
+			className={`${styles.nav} ${isOpen ? styles.navOpen : styles.navClose} `}
+		>
+			<ul className={styles.desktop}>
+				<li className={styles.icon} onClick={() => navigate("/dashboard")}>
+					<House size={18} />
+					<p>Dashboard</p>
 				</li>
-				<li onClick={() => navigate("/add-course")}>
-					<img src={AddIcon} alt="Add" />
-					Add Course
+				<li className={styles.icon} onClick={() => navigate("/add-course")}>
+					<SquarePlus size={18} />
+					<p>Add Course</p>
 				</li>
-				<li onClick={() => navigate("/my-courses")}>
-					<img src={CourseIcon} alt="Course" />
-					My Courses
+				<li className={styles.icon} onClick={() => navigate("/my-courses")}>
+					<Album size={18} />
+					<p>My Courses</p>
 				</li>
-				<li onClick={() => navigate("/students-enrolled")}>
-					<img src={PersonIcon} alt="Student" />
-					Student Enrolled
+				<li
+					className={styles.icon}
+					onClick={() => navigate("/students-enrolled")}
+				>
+					<UserCheck size={18} />
+					<p>Student Enrolled</p>
 				</li>
 			</ul>
+			<div
+				className={`${styles.toggleNavBtn} ${
+					isOpen ? styles.toggleOpen : styles.toggleClose
+				} `}
+				onClick={() => setIsOpen((isOpen) => !isOpen)}
+			>
+				<CircleChevronRight size={32} />
+			</div>
 		</nav>
 	);
 };
