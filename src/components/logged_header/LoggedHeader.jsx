@@ -17,7 +17,13 @@ const Navigation = () => {
 					<div className={styles.btnContainer}>
 						<p>Hi! Denden</p>
 					</div>
-					<img src={ProfileIcon} alt="" />
+					<div className={styles.profileBtn}>
+						<img src={ProfileIcon} alt="" />
+						<span>
+							<p>My Profile</p>
+							<p>Logout</p>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>

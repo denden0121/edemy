@@ -1,9 +1,12 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
 import styles from "./Navigation.module.css";
 import EdemyLogo from "@/assets/images/edemy-logo.svg";
+import { useWindowDimensions } from "@/hooks/useWindowDimensions";
+import { User } from "lucide-react";
 
 const Navigation = () => {
 	const navigate = useNavigate();
+	const { width, height } = useWindowDimensions();
 
 	return (
 		<div className={styles.navigationWrapper}>
@@ -14,10 +17,11 @@ const Navigation = () => {
 				</div>
 				<div className={styles.actionSection}>
 					<div className={styles.btnContainer}>
-						<p>Add Course</p>
+						<p onClick={() => navigate("/dashboard")}>Add Course</p>
 						<p className={styles.login} onClick={() => navigate("/dashboard")}>
 							Login
 						</p>
+						<User size={22} className={styles.userIcon} />
 					</div>
 					<button className={styles.createAccBtn}>Create Account</button>
 				</div>

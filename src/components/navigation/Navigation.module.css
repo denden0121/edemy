@@ -80,6 +80,9 @@
 		border: none;
 	}
 
+	.userIcon {
+		display: none;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -161,6 +164,10 @@
 		color: var(--text-inverse);
 		border: none;
 	}
+
+	.userIcon {
+		display: none;
+	}
 }
 
 @media (max-width: 768px) {
@@ -241,6 +248,10 @@
 		color: var(--text-inverse);
 		border: none;
 	}
+
+	.userIcon {
+		display: none;
+	}
 }
 
 
@@ -302,5 +313,12 @@
 		font-weight: 400;
 		color: var(--text-inverse);
 		border: none;
+	}
+
+	.userIcon {
+		display: block;
+		color: var(--text-secondary);
+		border: 1px solid var(--text-secondary);
+		border-radius: 50%;
 	}
 }

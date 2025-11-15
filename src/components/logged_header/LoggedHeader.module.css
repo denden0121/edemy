@@ -74,6 +74,44 @@
 		padding: 0 14px;
 	}
 
+	.profileBtn {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.profileBtn:hover span {
+		display: flex;
+	}
+
+	.profileBtn span {
+		position: absolute;
+		border: 1px solid rgb(37, 37, 37, .2);
+		border-radius: 4px;
+		min-width: 150px;
+		padding: 12px 24px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		gap: 12px;
+		bottom: 100;
+		right: 0;
+		z-index: 101;
+		background-color: var(--background);
+		display: none;
+	}
+
+	.profileBtn span p {
+		font-size: 15px;
+		font-weight: 400;
+		color: #252525;
+		transition: color .3s ease;
+	}
+
+	.profileBtn span p:hover {
+		color: var(--color-primary);
+	}
+
 
 }
 
@@ -150,6 +188,44 @@
 		width: max-content;
 		cursor: pointer;
 		padding: 0 14px;
+	}
+
+	.profileBtn {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.profileBtn:hover span {
+		display: flex;
+	}
+
+	.profileBtn span {
+		position: absolute;
+		border: 1px solid rgb(37, 37, 37, .2);
+		border-radius: 4px;
+		min-width: 150px;
+		padding: 12px 24px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		gap: 12px;
+		bottom: 100;
+		right: 0;
+		z-index: 101;
+		background-color: var(--background);
+		display: none;
+	}
+
+	.profileBtn span p {
+		font-size: 15px;
+		font-weight: 400;
+		color: #252525;
+		transition: color .3s ease;
+	}
+
+	.profileBtn span p:hover {
+		color: var(--color-primary);
 	}
 
 
@@ -306,6 +382,44 @@
 		width: max-content;
 		cursor: pointer;
 		padding: 0 14px;
+	}
+
+	.profileBtn {
+		position: relative;
+		cursor: pointer;
+	}
+
+	.profileBtn:hover span {
+		display: flex;
+	}
+
+	.profileBtn span {
+		position: absolute;
+		border: 1px solid rgb(37, 37, 37, .2);
+		border-radius: 4px;
+		min-width: 110px;
+		padding: 8px 12px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		gap: 12px;
+		bottom: 100;
+		right: 0;
+		z-index: 101;
+		background-color: var(--background);
+		display: none;
+	}
+
+	.profileBtn span p {
+		font-size: 14px;
+		font-weight: 400;
+		color: #252525;
+		transition: color .3s ease;
+	}
+
+	.profileBtn span p:hover {
+		color: var(--color-primary);
 	}
 
 

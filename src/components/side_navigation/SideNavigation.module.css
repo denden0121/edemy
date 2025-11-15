@@ -212,3 +212,114 @@
 	}
 
 }
+
+@media (max-width: 768px) {
+
+	.nav {
+		border-right: 1px solid rgb(37, 37, 37, .3);
+		position: relative;
+		position: absolute;
+		height: 100%;
+		z-index: 99;
+		transition: width .3s ease;
+		width: max-content;
+		background-color: var(--background);
+
+		p {
+			white-space: nowrap;
+		}
+
+		ul {
+			list-style: none;
+			overflow: hidden;
+		}
+
+		li {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			gap: 16px;
+			padding: 12px 18px;
+			height: 40px;
+			cursor: pointer;
+			color: #252525;
+			font-size: 12px;
+
+			img {
+				max-height: 14px;
+				max-width: 14px;
+			}
+		}
+
+		li:hover {
+			background-color: #F2F3FF;
+			border-right: 6px solid #5F6FFF;
+		}
+
+		.active {
+			background-color: #F2F3FF;
+			border-right: 6px solid #5F6FFF;
+		}
+	}
+
+	.navOpen {
+		width: 150px;
+		transition: all .3s ease;
+	}
+
+	.navClose {
+		width: 20px;
+		transition: all .3s ease;
+		border: none;
+
+		ul,
+		p {
+			display: none;
+		}
+	}
+
+	.icon {
+		transition: all .3s ease;
+	}
+
+	.icon:hover {
+		color: var(--color-primary);
+	}
+
+	.toggleNavBtn {
+		--rotation: 0deg;
+		height: max-content;
+		width: max-content;
+		border: none;
+		position: absolute;
+		top: calc(50vh - 32px);
+		right: -16px;
+		z-index: 100;
+		background-color: var(--background);
+		border-radius: 50%;
+		cursor: pointer;
+		color: rgb(37, 37, 37, .3);
+		transition: transform 0.3s ease;
+		transform: rotate(var(--rotation));
+	}
+
+	.nav li svg {
+		flex-shrink: 0;
+	}
+
+	.toggleNavBtn:hover {
+		transform: rotate(var(--rotation)) scale(1.2);
+	}
+
+	.toggleOpen {
+		--rotation: 180deg;
+		color: var(--color-primary);
+	}
+
+	.toggleClose {
+		--rotation: 0deg;
+	}
+
+}

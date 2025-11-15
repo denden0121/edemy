@@ -2,7 +2,7 @@ import styles from "./Dashboard.module.css";
 import LoggedHeader from "@/components/logged_header/LoggedHeader";
 import Navigation from "@/components/side_navigation/SideNavigation";
 import Overview from "@/components/dashboard_overview/DashboardOverview";
-import DashboardTable from "../../components/dashboard_table/DashboardTable";
+import DashboardTable from "@/components/dashboard_table/DashboardTable";
 
 const Dashboard = () => {
 	return (
