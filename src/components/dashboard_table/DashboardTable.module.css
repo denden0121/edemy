@@ -10,6 +10,8 @@ td {
 	text-align: start;
 	padding: 8px 0 0 14px;
 	border-bottom: 1px solid rgb(37, 37, 37, .2);
+	white-space: nowrap;
+	overflow: hidden;
 
 }
 
@@ -45,6 +47,5 @@ td {
 			color: rgb(37, 37, 37, .7);
 		}
 	}
-
 
 }

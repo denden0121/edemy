@@ -1,46 +1,99 @@
-.dashboardOverview {
-	display: flex;
-	flex-direction: row;
-	justify-content: start;
-	align-items: center;
-	width: 90%;
-	height: max-content;
-	gap: 17px;
+@media (min-width: 1025px) {
+	.dashboardOverview {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		width: 90%;
+		height: max-content;
+		gap: 17px;
+	}
+
+	.overviewCard {
+		border: 1px solid #0260FF;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 18px;
+		border-radius: 6px;
+		gap: 14px;
+
+		img {
+			height: 56px;
+			width: 56px;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: start;
+			width: max-content;
+		}
+
+		div p:nth-child(1) {
+			font-size: 24px;
+			font-weight: 500;
+			color: #515151;
+		}
+
+		div p:nth-child(2) {
+			font-size: 16px;
+			font-weight: 500;
+			color: #696B80;
+			width: max-content;
+		}
+	}
 }
 
-.overviewCard {
-	border: 1px solid #0260FF;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 18px;
-	border-radius: 6px;
-	gap: 14px;
+/* @media (max-width: 768px) {} */
 
-	img {
-		height: 56px;
-		width: 56px;
-	}
-
-	div {
+@media (max-width: 640px) {
+	.dashboardOverview {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: start;
-		align-items: start;
-		width: max-content;
+		align-items: center;
+		width: 100%;
+		height: max-content;
+		gap: 12px;
 	}
 
-	div p:nth-child(1) {
-		font-size: 24px;
-		font-weight: 500;
-		color: #515151;
-	}
+	.overviewCard {
+		border: 1px solid #0260FF;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 8px;
+		border-radius: 6px;
+		gap: 4px;
 
-	div p:nth-child(2) {
-		font-size: 16px;
-		font-weight: 500;
-		color: #696B80;
-		width: max-content;
+		img {
+			height: 18px;
+			width: 18px;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: start;
+			width: max-content;
+		}
+
+		div p:nth-child(1) {
+			font-size: 12px;
+			font-weight: 500;
+			color: #515151;
+		}
+
+		div p:nth-child(2) {
+			font-size: 8px;
+			font-weight: 500;
+			color: #696B80;
+			width: max-content;
+		}
 	}
 }
