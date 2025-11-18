@@ -1,51 +1,221 @@
-.table {
-	width: 100%;
-	border-collapse: collapse;
-	border-radius: 6px;
-	border: 1px solid rgb(37, 37, 37, .2);
-}
-
-th,
-td {
-	text-align: start;
-	padding: 8px 0 0 14px;
-	border-bottom: 1px solid rgb(37, 37, 37, .2);
-	white-space: nowrap;
-	overflow: hidden;
-
-}
-
-th {
-	font-size: 14px;
-	font-weight: 600;
-	color: #252525;
-	padding: 12px;
-}
-
-td {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgb(37, 37, 37, .7);
-
-	p {
-		display: flex;
-		flex-direction: row;
-		justify-content: start;
-		align-items: center;
-		max-width: max-content;
-		gap: 9px;
-
-		img {
-			height: 35px;
-			width: 35px;
-			border-radius: 50%;
-		}
-
-		span {
-			font-size: 14px;
-			font-weight: 400;
-			color: rgb(37, 37, 37, .7);
-		}
+@media (min-width: 1025px) {
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+		border-radius: 6px;
+		border: 1px solid rgb(37, 37, 37, .2);
+		table-layout: fixed;
 	}
 
+	th,
+	td {
+		text-align: start;
+		padding: 8px 0 0 14px;
+		border-bottom: 1px solid rgb(37, 37, 37, .2);
+		white-space: nowrap;
+		overflow: hidden;
+
+	}
+
+	th {
+		font-size: 14px;
+		font-weight: 600;
+		color: #252525;
+		padding: 12px;
+	}
+
+	td {
+		font-size: 14px;
+		font-weight: 400;
+		color: rgb(37, 37, 37, .7);
+
+		p {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			max-width: max-content;
+			gap: 9px;
+
+			img {
+				height: 35px;
+				width: 35px;
+				border-radius: 50% !important;
+			}
+
+			span {
+				font-size: 14px;
+				font-weight: 400;
+				color: rgb(37, 37, 37, .7);
+			}
+		}
+
+	}
+}
+
+@media (max-width: 1024px) {
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+		border-radius: 6px;
+		border: 1px solid rgb(37, 37, 37, .2);
+		table-layout: fixed;
+	}
+
+	th,
+	td {
+		text-align: start;
+		padding: 8px 0 0 14px;
+		border-bottom: 1px solid rgb(37, 37, 37, .2);
+		white-space: nowrap;
+		overflow: hidden;
+
+	}
+
+	th {
+		font-size: 14px;
+		font-weight: 600;
+		color: #252525;
+		padding: 12px;
+	}
+
+	td {
+		font-size: 14px;
+		font-weight: 400;
+		color: rgb(37, 37, 37, .7);
+
+		p {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			max-width: max-content;
+			gap: 9px;
+
+			img {
+				height: 35px;
+				width: 35px;
+				border-radius: 50% !important;
+			}
+
+			span {
+				font-size: 14px;
+				font-weight: 400;
+				color: rgb(37, 37, 37, .7);
+			}
+		}
+
+	}
+}
+
+@media (max-width: 768px) {
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+		border-radius: 6px;
+		border: 1px solid rgb(37, 37, 37, .2);
+		table-layout: fixed;
+	}
+
+	th,
+	td {
+		text-align: start;
+		padding: 8px 0 0 14px;
+		border-bottom: 1px solid rgb(37, 37, 37, .2);
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	th {
+		font-size: 10px !important;
+		font-weight: 600;
+		color: #252525;
+		padding: 12px;
+	}
+
+	td {
+		font-size: 10px !important;
+		font-weight: 400;
+		color: rgb(37, 37, 37, .7);
+
+		p {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			max-width: max-content;
+			gap: 9px;
+
+			img {
+				height: 28px !important;
+				width: 28px !important;
+				border-radius: 50% !important;
+			}
+
+			span {
+				font-size: 10px !important;
+				font-weight: 400;
+				color: rgb(37, 37, 37, .7);
+			}
+		}
+
+	}
+
+
+}
+
+
+
+@media (max-width: 640px) {
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+		border-radius: 6px;
+		border: 1px solid rgb(37, 37, 37, .2);
+		table-layout: fixed;
+	}
+
+	th,
+	td {
+		text-align: start;
+		padding: 8px 0 0 14px;
+		border-bottom: 1px solid rgb(37, 37, 37, .2);
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	th {
+		font-size: 8px !important;
+		font-weight: 600;
+		color: #252525;
+		padding: 12px;
+	}
+
+	td {
+		font-size: 8px !important;
+		font-weight: 400;
+		color: rgb(37, 37, 37, .7);
+
+		p {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			max-width: max-content;
+			gap: 9px;
+
+			img {
+				height: 18px !important;
+				width: 18px !important;
+				border-radius: 50% !important;
+			}
+
+			span {
+				font-size: 8px !important;
+				font-weight: 400;
+				color: rgb(37, 37, 37, .7);
+			}
+		}
+
+	}
 }
