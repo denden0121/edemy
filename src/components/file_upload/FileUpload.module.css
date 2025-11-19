@@ -1,37 +1,120 @@
-.fileUploadContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	gap: 19px;
+@media (min-width: 1025px) {
+	.fileUploadContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 19px;
 
-	input {
-		display: none;
+		input {
+			display: none;
+		}
+
+		img {
+			min-height: 36px;
+			min-width: 36px;
+		}
+
+		label {
+			font-size: 16px;
+			font-weight: 400;
+			width: max-content;
+			text-align: start;
+			min-width: max-content;
+		}
 	}
 
-	img {
-		min-height: 36px;
-		min-width: 36px;
-	}
-
-	label {
-		font-size: 16px;
-		font-weight: 400;
+	.fileBtn {
+		height: max-content;
 		width: max-content;
-		text-align: start;
-		min-width: max-content;
+		cursor: pointer;
+	}
+
+	.fileUploadContainer p:nth-child(4) {
+		img {
+			height: 36px;
+			width: 64px;
+		}
 	}
 }
 
-.fileBtn {
-	height: max-content;
-	width: max-content;
-	cursor: pointer;
+@media (max-width: 1024px) {
+	.fileUploadContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 17px;
+
+		input {
+			display: none;
+		}
+
+		img {
+			min-height: 28px;
+			min-width: 28px;
+		}
+
+		label {
+			font-size: 14px;
+			font-weight: 400;
+			width: max-content;
+			text-align: start;
+			min-width: max-content;
+		}
+	}
+
+	.fileBtn {
+		height: max-content;
+		width: max-content;
+		cursor: pointer;
+	}
+
+	.fileUploadContainer p:nth-child(4) {
+		img {
+			height: 28px;
+			width: 54px;
+		}
+	}
 }
 
-.fileUploadContainer p:nth-child(4) {
-	img {
-		height: 36px;
-		width: 64px;
+
+@media (max-width: 640px) {
+	.fileUploadContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 17px;
+
+		input {
+			display: none;
+		}
+
+		img {
+			min-height: 18px;
+			min-width: 18px;
+		}
+
+		label {
+			font-size: 10px;
+			font-weight: 400;
+			width: max-content;
+			text-align: start;
+			min-width: max-content;
+		}
+	}
+
+	.fileBtn {
+		height: max-content;
+		width: max-content;
+		cursor: pointer;
+	}
+
+	.fileUploadContainer p:nth-child(4) {
+		img {
+			height: 18px;
+			width: 38px;
+		}
 	}
 }

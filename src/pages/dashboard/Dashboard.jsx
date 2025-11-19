@@ -19,7 +19,7 @@ const Dashboard = () => {
 					</div>
 				</main>
 			</div>
-			<LoggedFooter />
+			{/* <LoggedFooter /> */}
 		</div>
 	);
 };
