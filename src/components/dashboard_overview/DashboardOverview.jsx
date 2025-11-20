@@ -6,21 +6,33 @@ import TotalEarnings from "@/assets/icons/earn-icon.svg";
 const DashboardOvervew = () => {
 	return (
 		<div className={styles.dashboardOverview}>
-			<div className={styles.overviewCard}>
+			<div
+				className={styles.overviewCard}
+				data-aos="fade-up"
+				data-aos-delay="0"
+			>
 				<img src={TotalEnrolment} alt="" />
 				<div>
 					<p>14</p>
 					<p>Total Enrolments</p>
 				</div>
 			</div>
-			<div className={styles.overviewCard}>
+			<div
+				className={styles.overviewCard}
+				data-aos="fade-up"
+				data-aos-delay="200"
+			>
 				<img src={TotalCourses} alt="" />
 				<div>
 					<p>8</p>
 					<p>Total Courses</p>
 				</div>
 			</div>
-			<div className={styles.overviewCard}>
+			<div
+				className={styles.overviewCard}
+				data-aos="fade-up"
+				data-aos-delay="400"
+			>
 				<img src={TotalEarnings} alt="" />
 				<div>
 					<p>$245</p>

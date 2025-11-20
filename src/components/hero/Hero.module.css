@@ -1,6 +1,6 @@
 @media (min-width: 1025px) {
 	.heroWrapper {
-		min-height: 50vh;
+		min-height: 45vh;
 		width: 100%;
 		display: flex;
 		flex-direction: column;

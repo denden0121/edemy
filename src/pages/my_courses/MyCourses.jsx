@@ -10,9 +10,13 @@ const MyCourses = () => {
 			<div className={styles.container}>
 				<Navigation />
 				<main>
-					<div className={styles.dashboardTable}>
-						<p>My Courses</p>
-						<DashboardCoursesTable />
+					<div className={styles.dashboardTable} data-aos="fade-up">
+						<p data-aos="fade-up" data-aos-delay="0">
+							My Courses
+						</p>
+						<span data-aos="fade-up" data-aos-delay="200">
+							<DashboardCoursesTable />
+						</span>
 					</div>
 				</main>
 			</div>

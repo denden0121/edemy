@@ -11,8 +11,12 @@ const Dashboard = () => {
 				<Navigation />
 				<main>
 					<div className={styles.dashboardTable}>
-						<p>Students Enrolled</p>
-						<DashboardTable />
+						<p data-aos="fade-up" data-aos-delay="0">
+							Students Enrolled
+						</p>
+						<span data-aos="fade-up" data-aos-delay="200">
+							<DashboardTable />
+						</span>
 					</div>
 				</main>
 			</div>

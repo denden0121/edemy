@@ -7,8 +7,21 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import StudentsEnrolled from "./pages/students_enrolled/StudentsEnrolled";
 import MyCourses from "./pages/my_courses/MyCourses";
 import AddCourse from "./pages/add_course/AddCourse";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+	useEffect(() => {
+		AOS.init({
+			offset: 200,
+			duration: 600,
+			// easing: "ease-out-quart",
+			easing: "ease-out-back",
+			delay: 50,
+			once: false,
+		});
+	});
 	return (
 		<>
 			<Routes>

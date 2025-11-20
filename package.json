@@ -12,6 +12,7 @@
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.8.0",
     "@tailwindcss/vite": "^4.1.16",
+    "aos": "^3.0.0-beta.6",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.552.0",
     "react": "^19.1.1",

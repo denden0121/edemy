@@ -38,13 +38,19 @@ const Courses = () => {
 
 	return (
 		<div className={styles.container}>
-			<p className={styles.title}>Learn from the best</p>
-			<p className={styles.subtitle}>
+			<p className={styles.title} data-aos="fade-up">
+				Learn from the best
+			</p>
+			<p className={styles.subtitle} data-aos="fade-up">
 				Discover our top-rated courses across various categories. From coding
 				and designing to business and wellness, our coruses are crafted to
 				deliver results.
 			</p>
-			<div className={styles.courseContainer}>
+			<div
+				className={styles.courseContainer}
+				data-aos="fade-up"
+				data-aos-delay="50"
+			>
 				{courseData.map((data, index) => (
 					<CourseCard
 						key={index}

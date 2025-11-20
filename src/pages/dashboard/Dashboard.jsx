@@ -13,9 +13,15 @@ const Dashboard = () => {
 				<Navigation />
 				<main>
 					<Overview />
-					<div className={styles.dashboardTable}>
+					<div
+						className={styles.dashboardTable}
+						data-aos="fade-up"
+						data-aos-delay="600"
+					>
 						<p>Latest Enrolments</p>
-						<DashboardTable />
+						<span data-aos="fade-up" data-aos-delay="800">
+							<DashboardTable />
+						</span>
 					</div>
 				</main>
 			</div>

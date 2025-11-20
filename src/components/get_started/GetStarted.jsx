@@ -4,7 +4,7 @@ import ArrowIcon from "@/assets/icons/arrow-icon.svg";
 const GetStarted = () => {
 	return (
 		<div className={styles.getStarted}>
-			<div className={styles.headerContainer}>
+			<div className={styles.headerContainer} data-aos="fade-up">
 				<p className={styles.header}>Learn anything, anytime, anywhere</p>
 				<p className={styles.subtitle}>
 					Empower your journey with flexible, high-quality courses designed to
@@ -14,8 +14,10 @@ const GetStarted = () => {
 				</p>
 			</div>
 			<div className={styles.btnContainer}>
-				<button className={styles.getStartedBtn}>Get Started</button>
-				<button className={styles.learnMoreBtn}>
+				<button className={styles.getStartedBtn} data-aos="fade-right">
+					Get Started
+				</button>
+				<button className={styles.learnMoreBtn} data-aos="fade-left">
 					Learn more
 					<img className={styles.arrow} src={ArrowIcon} alt="Arrow" />
 				</button>

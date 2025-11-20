@@ -20,7 +20,11 @@ const AddCourse = () => {
 				<Navigation />
 				<main>
 					<form onSubmit={handleSubmit}>
-						<div className={styles.inputContainer}>
+						<div
+							className={styles.inputContainer}
+							data-aos="fade-up"
+							data-aos-delay="0"
+						>
 							<label htmlFor="title">Course Title</label>
 							<input
 								id="title"
@@ -29,7 +33,11 @@ const AddCourse = () => {
 								placeholder="Type here"
 							/>
 						</div>
-						<div className={styles.inputContainer}>
+						<div
+							className={styles.inputContainer}
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
 							<label htmlFor="headings">Course Headings</label>
 							<input
 								id="headings"
@@ -38,7 +46,11 @@ const AddCourse = () => {
 								placeholder="Type here"
 							/>
 						</div>
-						<div className={styles.inputContainer}>
+						<div
+							className={styles.inputContainer}
+							data-aos="fade-up"
+							data-aos-delay="400"
+						>
 							<label htmlFor="description">Course Description</label>
 							<textarea
 								name="description"
@@ -46,14 +58,20 @@ const AddCourse = () => {
 								placeholder="Type here"
 							></textarea>
 						</div>
-						<div className={styles.inputContainer}>
+						<div
+							className={styles.inputContainer}
+							data-aos="fade-up"
+							data-aos-delay="600"
+						>
 							<div className={styles.dualContainer}>
 								<label htmlFor="price">Course Price</label>
 								<input name="price" type="number" placeholder="0" />
 							</div>
 							<FileUpload />
 						</div>
-						<button type="submit">ADD</button>
+						<button type="submit" data-aos="fade-up" data-aos-delay="800">
+							ADD
+						</button>
 					</form>
 				</main>
 			</div>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Testimonial.module.css";
 import TestimonialCard from "@/components/testimonial_card/TestimonialCard";
 import DJackmanProfile from "@/assets/images/profile/donald-jackman.svg";
@@ -28,16 +29,22 @@ const Testimonial = () => {
 				"I've been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
 		},
 	];
+
+	const [delay, setDelay] = useState(900);
+
 	return (
 		<div className={styles.testimonial}>
-			<p className={styles.title}>Testimonials</p>
-			<p className={styles.subtitle}>
+			<p className={styles.title} data-aos="fade-up">
+				Testimonials
+			</p>
+			<p className={styles.subtitle} data-aos="fade-up">
 				Hear from our learners as they share their journey of transformation,
 				success, and how our platform has made a difference in their lives.
 			</p>
-			<div className={styles.container}>
+			<div className={styles.container} data-aos="fade-up">
 				{testimonialData.map((data, index) => (
 					<TestimonialCard
+						delay={delay}
 						index={index}
 						img={data.img}
 						name={data.name}
