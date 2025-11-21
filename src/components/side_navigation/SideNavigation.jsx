@@ -38,14 +38,14 @@ const SideNavigation = () => {
 					<p>Student Enrolled</p>
 				</li>
 			</ul>
-			<div
+			<span
 				className={`${styles.toggleNavBtn} ${
 					isOpen ? styles.toggleOpen : styles.toggleClose
 				} `}
 				onClick={() => setIsOpen((isOpen) => !isOpen)}
 			>
 				<CircleChevronRight size={32} />
-			</div>
+			</span>
 		</nav>
 	);
 };

@@ -9,7 +9,11 @@ const Navigation = () => {
 	const { width, height } = useWindowDimensions();
 
 	return (
-		<div className={styles.navigationWrapper}>
+		<div
+			className={styles.navigationWrapper}
+			data-aos="fade-down"
+			data-aos-delay="1300"
+		>
 			<div className={styles.navigationContainer}>
 				<div className={styles.logoSection} onClick={() => navigate("/")}>
 					<img src={EdemyLogo} alt="" className={styles.logo} />

@@ -44,8 +44,8 @@ const Testimonial = () => {
 			<div className={styles.container} data-aos="fade-up">
 				{testimonialData.map((data, index) => (
 					<TestimonialCard
+						key={index}
 						delay={delay}
-						index={index}
 						img={data.img}
 						name={data.name}
 						proffession={data.proffession}

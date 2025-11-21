@@ -1,25 +1,40 @@
 import styles from "./Hero.module.css";
 import SearchIcon from "@/assets/icons/search-icon.svg";
 import { useHeroRef } from "@/context/HeroRefContext";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const Banner = () => {
+	const choiceRef = useRef(null);
+	const fitRef = useRef(null);
 	const { heroRef } = useHeroRef();
+
+	useEffect(() => {
+		const animation = gsap.to([choiceRef.current, fitRef.current], {
+			rotateX: 360,
+			duration: 1,
+			delay: 1,
+			repeat: -1,
+		});
+
+		return () => {
+			animation.kill();
+		};
+	}, []);
+
 	return (
 		<div ref={heroRef} className={styles.heroWrapper}>
 			<div className={styles.heroContainer}>
 				<p className={styles.title} data-aos="zoom-out" data-aos-delay="50">
 					Empower your future with the courses designed to
 					<span data-aos="fade-left" data-aos-delay="400">
-						{" "}
-						fit{" "}
+						<span ref={fitRef}> fit </span>
 					</span>
-					<span
-						className={styles.span}
-						data-aos="fade-left"
-						data-aos-delay="400"
-					>
-						{" "}
-						your choice.
+					<span data-aos="fade-left" data-aos-delay="400">
+						<span className={styles.span} ref={choiceRef}>
+							{" "}
+							your choice.
+						</span>
 					</span>
 				</p>
 				<p className={styles.subtitle} data-aos="fade-up" data-aos-delay="1000">
