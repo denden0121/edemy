@@ -1,7 +1,9 @@
 import styles from "./GetStarted.module.css";
 import ArrowIcon from "@/assets/icons/arrow-icon.svg";
+import { useHeroRef } from "@/context/HeroRefContext";
 
 const GetStarted = () => {
+	const { heroRef } = useHeroRef();
 	return (
 		<div className={styles.getStarted}>
 			<div className={styles.headerContainer} data-aos="fade-up">
@@ -14,10 +16,18 @@ const GetStarted = () => {
 				</p>
 			</div>
 			<div className={styles.btnContainer}>
-				<button className={styles.getStartedBtn} data-aos="fade-right">
+				<button
+					className={styles.getStartedBtn}
+					data-aos="fade-right"
+					onClick={() => heroRef.current.scrollIntoView({ behavior: "smooth" })}
+				>
 					Get Started
 				</button>
-				<button className={styles.learnMoreBtn} data-aos="fade-left">
+				<button
+					className={styles.learnMoreBtn}
+					data-aos="fade-left"
+					onClick={() => heroRef.current.scrollIntoView({ behavior: "smooth" })}
+				>
 					Learn more
 					<img className={styles.arrow} src={ArrowIcon} alt="Arrow" />
 				</button>

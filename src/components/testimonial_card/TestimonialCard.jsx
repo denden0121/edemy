@@ -1,7 +1,10 @@
 import styles from "./TestimonialCard.module.css";
 import StarColored from "@/assets/images/star-colored.svg";
+import { useHeroRef } from "@/context/HeroRefContext";
 
 const TestimonialCard = ({ index, img, name, profession, testimonialText }) => {
+	const { heroRef } = useHeroRef();
+
 	return (
 		<div key={index} className={styles.card}>
 			<div className={styles.informationContainer}>
@@ -22,7 +25,12 @@ const TestimonialCard = ({ index, img, name, profession, testimonialText }) => {
 					<img src={StarColored} alt="Star" />
 				</span>
 				<p className={styles.testimonialText}>{testimonialText}</p>
-				<p className={styles.readMoreBtn}>Read more</p>
+				<p
+					className={styles.readMoreBtn}
+					onClick={() => heroRef.current.scrollIntoView({ behavior: "smooth" })}
+				>
+					Read more
+				</p>
 			</div>
 		</div>
 	);

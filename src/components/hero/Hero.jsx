@@ -1,9 +1,11 @@
 import styles from "./Hero.module.css";
 import SearchIcon from "@/assets/icons/search-icon.svg";
+import { useHeroRef } from "@/context/HeroRefContext";
 
 const Banner = () => {
+	const { heroRef } = useHeroRef();
 	return (
-		<div className={styles.heroWrapper}>
+		<div ref={heroRef} className={styles.heroWrapper}>
 			<div className={styles.heroContainer}>
 				<p className={styles.title} data-aos="zoom-out" data-aos-delay="50">
 					Empower your future with the courses designed to

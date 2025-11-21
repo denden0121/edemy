@@ -21,7 +21,7 @@ const Navigation = () => {
 						<img src={ProfileIcon} alt="" />
 						<span>
 							<p>My Profile</p>
-							<p>Logout</p>
+							<p onClick={() => navigate("/")}>Logout</p>
 						</span>
 					</div>
 				</div>

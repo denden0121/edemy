@@ -84,6 +84,7 @@
 	text-decoration: underline;
 	position: absolute;
 	bottom: 12px;
+	cursor: pointer;
 }
 
 @media (max-width: 640px) {

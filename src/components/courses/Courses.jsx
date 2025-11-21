@@ -61,7 +61,9 @@ const Courses = () => {
 					/>
 				))}
 			</div>
-			<button onClick={() => navigate("/course-list")}>Show all courses</button>
+			<button data-aos="fade-up" onClick={() => navigate("/course-list")}>
+				Show all courses
+			</button>
 		</div>
 	);
 };
