@@ -25,7 +25,6 @@ const Dashboard = () => {
 					</div>
 				</main>
 			</div>
-			{/* <LoggedFooter /> */}
 		</div>
 	);
 };

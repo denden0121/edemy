@@ -7,7 +7,6 @@ const AddCourse = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const formData = new FormData(e.target);
-		// console.log(Object.fromEntries(formData));
 		for (const [key, value] of formData.entries()) {
 			console.log(key, value);
 		}

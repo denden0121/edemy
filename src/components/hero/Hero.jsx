@@ -1,37 +1,44 @@
 import styles from "./Hero.module.css";
 import SearchIcon from "@/assets/icons/search-icon.svg";
 import { useHeroRef } from "@/context/HeroRefContext";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Banner = () => {
-	const choiceRef = useRef(null);
-	const fitRef = useRef(null);
+	const spanRef = useRef(null);
 	const { heroRef } = useHeroRef();
-
-	useEffect(() => {
-		const animation = gsap.to([choiceRef.current, fitRef.current], {
-			rotateX: 360,
-			duration: 1,
-			delay: 1,
-			repeat: -1,
-		});
-
-		return () => {
-			animation.kill();
-		};
-	}, []);
+	useGSAP(() => {
+		let ctx = gsap.context(() => {
+			setTimeout(() => {
+				gsap.to(["#fit", "#span"], {
+					y: "+10px",
+					duration: 0.5,
+					repeat: -1,
+					yoyo: true,
+					ease: "sine.inOut",
+					stagger: 0.2,
+				});
+			}, 2000);
+		}, spanRef);
+		return () => ctx.revert();
+	});
 
 	return (
 		<div ref={heroRef} className={styles.heroWrapper}>
 			<div className={styles.heroContainer}>
-				<p className={styles.title} data-aos="zoom-out" data-aos-delay="50">
+				<p
+					ref={spanRef}
+					className={styles.title}
+					data-aos="zoom-out"
+					data-aos-delay="50"
+				>
 					Empower your future with the courses designed to
 					<span data-aos="fade-left" data-aos-delay="400">
-						<span ref={fitRef}> fit </span>
+						<span id="fit"> fit </span>
 					</span>
 					<span data-aos="fade-left" data-aos-delay="400">
-						<span className={styles.span} ref={choiceRef}>
+						<span id="span" className={styles.span}>
 							{" "}
 							your choice.
 						</span>

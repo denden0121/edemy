@@ -1,16 +1,5 @@
 @import "tailwindcss";
 
-/* 
-Thin	100	Very light headings
-Extra Light	200	Rarely used
-Light	300	Secondary text
-Regular / Normal	400	Default text weight
-Medium	500	Slightly heavier paragraphs / subheadings
-Semi Bold	600	Buttons, titles, emphasis
-Bold	700	Section headings
-Extra Bold	800	Rarely used, hero titles
-Black	900	Display fonts, rarely in UI */
-
 /* Import font */
 @font-face {
 	font-family: 'Outfit';
@@ -76,7 +65,6 @@ body {
 	flex-direction: column;
 }
 
-/* Optional global container alignment */
 #root {
 	flex: 1;
 	display: flex;

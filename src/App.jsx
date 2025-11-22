@@ -18,7 +18,7 @@ function App() {
 			duration: 600,
 			easing: "ease-out-back",
 			delay: 0,
-			once: false,
+			once: true,
 		});
 	});
 	return (

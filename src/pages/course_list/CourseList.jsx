@@ -88,7 +88,6 @@ const CourseList = () => {
 		<>
 			<Navigation />
 			<div className={styles.courseList}>
-				{/* navigation */}
 				<div className={styles.headerContainer}>
 					<div className={styles.header}>
 						<p>Course List</p>
